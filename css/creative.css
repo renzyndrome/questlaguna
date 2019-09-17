@@ -10672,8 +10672,8 @@ hr.light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 72px);
-  /* background: -webkit-gradient(linear, left top, left bottom, from(rgba(89, 92, 66, 0.8)), to(rgba(89, 92, 66, 0.8))), url("../img/1920x1080.png");
-  background: linear-gradient(to bottom, rgb(132, 24, 24) 60%, rgba(41, 7, 7, 0.8) 100%), url("../img/1920x1080.png"); */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(89, 92, 66, 0.8)), to(rgba(89, 92, 66, 0.8))), url("../img/1920x1080.png");
+  background: linear-gradient(to bottom, rgba(89, 92, 66, 0.8) 0%, rgba(89, 92, 66, 0.8) 100%), url("../img/1920x1080.png");
   background: url("../img/1920x1080.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -10756,52 +10756,3 @@ header.masthead h1 {
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
-
-
-/* timer */
-.countdown-container {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  transform: translateY(-50%);
-  }
-  .clock-item .inner {
-  height: 0px;
-  padding-bottom: 100%;
-  position: relative;
-  width: 100%;
-  }
-  .clock-canvas {
-  background-color: rgba(255, 255, 255, .1);
-  border-radius: 50%;
-  height: 0px;
-  padding-bottom: 100%;
-  }
-  .text {
-  color: #fff;
-  font-size: 30px;
-  font-weight: bold;
-  margin-top: -50px;
-  position: absolute;
-  top: 50%;
-  text-align: center;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
-  width: 100%;
-  }
-  .text .val {
-  font-size: 50px;
-  }
-  .text .type-time {
-  font-size: 20px;
-  }
-   @media (min-width: 768px) and (max-width: 991px) {
-  .clock-item {
-  margin-bottom: 30px;
-  }
-  }
-   @media (max-width: 767px) {
-  .clock-item {
-  margin: 0px 30px 30px 30px;
-  }
-  }
