@@ -1,6 +1,6 @@
 {
-    "title": "Creative",
-    "name": "startbootstrap-creative",
+    "title": "Quest Laguna",
+    "name": "Red Tag's Fearless Landing Page",
     "version": "5.1.7",
     "scripts": {
         "start": "node_modules/.bin/gulp watch"
