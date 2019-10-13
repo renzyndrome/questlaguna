@@ -359,8 +359,8 @@ template {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: 0.5rem;
-  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  margin-bottom: -1rem;
+  font-family: "Gotham-Black";
   font-weight: 500;
   line-height: 1.2;
 }
@@ -9809,8 +9809,9 @@ html {
 
 hr.divider {
   max-width: 3.25rem;
-  border-width: 0.2rem;
+  border-width: 0.3rem;
   border-color: #b71c1c;
+  margin-bottom: 6em !important;
 }
 
 hr.light {
@@ -9999,21 +10000,13 @@ header.masthead h1 {
 .carousel .next {left:0;opacity:1;z-index:1;}
 
 
-/* .about h1 {
-    margin: auto;
-    font-weight: bold;
-    font-size:3em;
-    margin-bottom: 20px;
-  } */
-  
+/* About Section */
+
+
 .about img {
   border-radius: 8px;
   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
-
-
-
-
   
 .about text {
   margin: auto;
@@ -10023,7 +10016,7 @@ header.masthead h1 {
 }
 
 
-.about p {
+p {
   /* padding-left: 1em; */
   position: relative;
   font-size: 1.1em;
@@ -10032,16 +10025,14 @@ header.masthead h1 {
 }
 
 
-/* .about h1 { color: #b71c1c; font-family: 'Raleway',sans-serif; font-weight: 800; line-height: 72px; margin: 0 0 24px; text-align: center; text-transform: uppercase;  } */
 
-
-.about p { font-family: 'Gotham-Book', sans-serif; line-height: 35px; margin-bottom: 15px; color: #666; }
+p { font-family: 'Gotham-Book', sans-serif; line-height: 35px; margin-bottom: 15px; color: #666; }
 
 
 
-.about a {
-  color: #a03c21; font-size: 48px; font-family: 'Gotham-Black', sans-serif; padding-bottom: 10px; 
-  font-size: 1.7em;
+.about span {
+  color: #a03c21; font-family: 'Gotham-Black', sans-serif; padding-bottom: 10px; 
+  font-size: 1.6em;
   /* font-weight: bold;
   text-shadow: 1.8px 0 #a03c21;
   letter-spacing:2px; */
@@ -10059,3 +10050,18 @@ a:hover { color: #b71c1c }
 
 .meta-info p { font-family: 'Fenix', serif; font-style: italic; color: #666; font-size: 16px; }
 
+
+/* PARALLAX */
+
+.parallax {
+  /* The image used */
+  background-image: url('../img/baptism.jpg');
+
+  min-height: 350px; 
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  }
