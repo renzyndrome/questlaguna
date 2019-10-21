@@ -8336,7 +8336,7 @@ button.bg-dark:focus {
 
 .mt-4,
 .my-4 {
-  margin-top: 1.5rem !important;
+  margin-top: 1rem !important;
 }
 
 .mr-4,
@@ -8346,7 +8346,7 @@ button.bg-dark:focus {
 
 .mb-4,
 .my-4 {
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 3rem !important;
 }
 
 .ml-4,
@@ -10371,7 +10371,8 @@ hr.divider {
   max-width: 3.25rem;
   border-width: 0.3rem;
   border-color: #b71c1c;
-  margin-bottom: 2em !important;
+  margin-top: 1.5em !important;
+  margin-bottom: 3em !important;
 }
 
 hr.light {
@@ -10392,7 +10393,7 @@ hr.light {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 4rem 0;
 }
 
 #mainNav {
@@ -10621,17 +10622,6 @@ p { font-family: 'Gotham-Book', sans-serif; line-height: 35px; margin-bottom: 15
   background-repeat: no-repeat;
   background-size: cover;
   }
-/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
-  }
-  .main-raised {
-    margin: -60px 30px 0px;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 20px;
-}
 
 
   /* VIDEO SECTION */
@@ -10720,3 +10710,19 @@ p { font-family: 'Gotham-Book', sans-serif; line-height: 35px; margin-bottom: 15
       .contactH4 {
        font-family: 'Gotham-Light', sans-serif; padding-bottom: 10px; 
       }
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+  .main-raised {
+    margin: -60px 30px 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+  .page-section {
+    padding: 2rem 0;
+  }
+}
