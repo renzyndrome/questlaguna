@@ -10371,7 +10371,7 @@ hr.divider {
   max-width: 3.25rem;
   border-width: 0.3rem;
   border-color: #b71c1c;
-  margin-bottom: 6em !important;
+  margin-bottom: 2em !important;
 }
 
 hr.light {
@@ -10560,10 +10560,10 @@ header.masthead h1 {
 .carousel .next {left:0;opacity:1;z-index:1;}
 
 
-/* About Section */
+/* Who We Are Section */
 
 
-.about img {
+.about img, .whoweare img {
   border-radius: 8px;
   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 }
@@ -10589,6 +10589,14 @@ p {
 p { font-family: 'Gotham-Book', sans-serif; line-height: 35px; margin-bottom: 15px; color: #666; }
 
 
+.whoweare span {
+  color: #a03c21; font-family: 'Gotham-Black', sans-serif; padding-bottom: 10px; 
+  font-size: 1.2em;
+  /* font-weight: bold;
+  text-shadow: 1.8px 0 #a03c21;
+  letter-spacing:2px; */
+  padding-right: 0.2em;
+}
 
 .about span {
   color: #a03c21; font-family: 'Gotham-Black', sans-serif; padding-bottom: 10px; 
@@ -10598,17 +10606,6 @@ p { font-family: 'Gotham-Book', sans-serif; line-height: 35px; margin-bottom: 15
   letter-spacing:2px; */
   padding-right: 0.2em;
 }
-
-a:hover { color: #b71c1c }
-
-
-.entry-content { border-bottom: 3px solid #666; padding: 0 0 15px 0; margin-bottom: 8px; }
-
-
-.meta-info { padding: 5px; overflow: hidden; }
-
-
-.meta-info p { font-family: 'Fenix', serif; font-style: italic; color: #666; font-size: 16px; }
 
 
 /* PARALLAX */
@@ -10623,10 +10620,18 @@ a:hover { color: #b71c1c }
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-
   }
-
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+  .main-raised {
+    margin: -60px 30px 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
 
 
   /* VIDEO SECTION */
@@ -10642,23 +10647,9 @@ a:hover { color: #b71c1c }
   }
 
 
-  /* DARK OVERLAY */
 
-  /* .dark-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-  } */
   
-  /* MAP */
-  .map{
-  border: 3px solid var(--primary);
-  padding:5px;
-  width:550px;
-  }
+
 
   /* FONT AWESOME */
 
@@ -10666,6 +10657,17 @@ a:hover { color: #b71c1c }
     color: var(--primary);
   }
 
+
+
+
+.about h3 {
+  color: #000;
+}
+
+.cta:hover {
+  color: #751212;
+  text-decoration: underline;
+}
 
   /**
  * Extra large button extensions. Extends `.btn`.
@@ -10680,17 +10682,7 @@ a:hover { color: #b71c1c }
   }
 
 
-  .fa-facebook g g path {
-    stroke: black;
-    stroke-width: 10;
-  }
 
-
-  /* CONTACT US */
-
-  .contactH4 {
-   font-family: 'Gotham-Light', sans-serif; padding-bottom: 10px; 
-  }
 
   /* hr in masthead */
 
@@ -10700,3 +10692,31 @@ a:hover { color: #b71c1c }
     border-color: #b71c1c;
     margin-bottom: 2em !important;
   }
+
+  .about span {
+    color: #a03c21; font-family: 'Gotham-Black', sans-serif; padding-bottom: 10px; 
+    font-size: 1.2em;
+    /* font-weight: bold;
+    text-shadow: 1.8px 0 #a03c21;
+    letter-spacing:2px; */
+    padding-right: 0.2em;
+  }
+
+    /* MAP */
+    .map{
+      border: 3px solid var(--primary);
+      padding:5px;
+      width:550px;
+      }
+
+      .fa-facebook g g path {
+        stroke: black;
+        stroke-width: 10;
+      }
+    
+    
+      /* CONTACT US */
+    
+      .contactH4 {
+       font-family: 'Gotham-Light', sans-serif; padding-bottom: 10px; 
+      }
