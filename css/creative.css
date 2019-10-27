@@ -10693,11 +10693,11 @@ p { font-family: 'Gotham-Book', sans-serif; line-height: 35px; margin-bottom: 15
   }
 
     /* MAP */
-    .map{
+    /* .map{
       border: 3px solid var(--primary);
       padding:5px;
       width:550px;
-      }
+      } */
 
       .fa-facebook g g path {
         stroke: black;
@@ -10710,6 +10710,18 @@ p { font-family: 'Gotham-Book', sans-serif; line-height: 35px; margin-bottom: 15
       .contactH4 {
        font-family: 'Gotham-Light', sans-serif; padding-bottom: 10px; 
       }
+
+
+.btn-primary.raised {
+	box-shadow: 0 3px 0 0 #007299;
+}
+
+.btn-primary.raised:active, .btn-primary.raised.active {
+	background: #33a6cc;
+	box-shadow: none;
+	margin-bottom: -3px;
+	margin-top: 3px;
+}
 
 /* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
 @media only screen and (max-device-width: 1366px) {
