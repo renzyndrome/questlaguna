@@ -10608,6 +10608,22 @@ p { font-family: 'Gotham-Book', sans-serif; line-height: 35px; margin-bottom: 15
   padding-right: 0.2em;
 }
 
+.partners img{
+  height: 100%;
+  width: 250px;;
+
+  transition: filter .5s ease-in-out;
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
+}
+
+.partners img:hover {
+  -webkit-filter: grayscale(100%); 
+  filter: grayscale(100%); 
+  /* background: rgba(253, 62, 65, 0.5); */
+}
+
+
 
 /* PARALLAX */
 
@@ -10636,9 +10652,6 @@ p { font-family: 'Gotham-Book', sans-serif; line-height: 35px; margin-bottom: 15
     color: #fff; */
   }
 
-
-
-  
 
 
   /* FONT AWESOME */
@@ -10692,24 +10705,19 @@ p { font-family: 'Gotham-Book', sans-serif; line-height: 35px; margin-bottom: 15
     padding-right: 0.2em;
   }
 
-    /* MAP */
-    /* .map{
-      border: 3px solid var(--primary);
-      padding:5px;
-      width:550px;
-      } */
 
-      .fa-facebook g g path {
-        stroke: black;
-        stroke-width: 10;
-      }
-    
-    
-      /* CONTACT US */
-    
-      .contactH4 {
-       font-family: 'Gotham-Light', sans-serif; padding-bottom: 10px; 
-      }
+
+  .fa-facebook g g path {
+    stroke: black;
+    stroke-width: 10;
+  }
+
+
+  /* CONTACT US */
+
+  .contactH4 {
+    font-family: 'Gotham-Light', sans-serif; padding-bottom: 10px; 
+  }
 
 
 .btn-primary.raised {
