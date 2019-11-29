@@ -10610,7 +10610,7 @@ p { font-family: 'Gotham-Book', sans-serif; line-height: 35px; margin-bottom: 15
 
 .partners img{
   height: 100%;
-  width: 250px;;
+  width: 150px;;
 
   transition: filter .5s ease-in-out;
   -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
